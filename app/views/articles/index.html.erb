@@ -1,0 +1,14 @@
+<%= render 'welcome/header' %>
+<div class="main2" style="margin-top: 0;">
+  <div class="container3">
+    <h1 id="articlesheader">OUR PRODUCTS</h1>
+  </div>
+</div>
+<% if logged_in? && current_user %>
+<p style="padding-top: 10px; padding-left: 10px;">
+  <%= link_to 'Create new', new_article_path, class: "btn btn-lg btn-success" %>
+</p>
+<% end %>
+
+<%= render 'article', obj: @articles %>
+

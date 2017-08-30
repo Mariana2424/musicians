@@ -1,0 +1,23 @@
+<%= render 'welcome/header' %>
+<div class="formcontrol0">
+<center>
+  <h1>New Product</h1>
+<%= form_for @article, class: "form-horizontal" do |a|  %>
+  <p>
+    <%= a.label :title, class: "form-control2" %>
+    <%= a.text_field :title, class: "form-control", placeholder: "Enter a title" %>
+  </p>
+  <p>
+    <%= a.label :image, class: "form-control2" %>
+    <%= a.text_field :image, class: "form-control", placeholder: "Enter an image" %>
+  </p>
+  <div class="button2">
+    <p>
+    <%= a.submit %>
+    </p>
+    <% end %>
+  </div>
+  
+</center>
+
+</div>

@@ -1,0 +1,245 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+  width: 400px;
+}
+
+body {
+  height: 720px;
+  background-color: #FAFAFC;
+}
+
+
+#first {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  padding-top: 5px;
+}
+p {
+  color: black;
+  font-family:'Roboto', sans-serif;
+}
+
+.two {
+  text-decoration: none;
+  background-color: white; 
+  padding: 10px;
+  border-radius: 20%;
+  color: black;
+  font-size: 15px;
+}
+.two:hover {
+  background-color: gray;
+}
+.main5 {
+  text-align: center;
+}
+.container5 {
+  align: center;
+}
+
+.form-control {
+  width: 300px;
+  height: 35px;
+  font-size: 20px;
+}
+.form-control2  {
+  color: #0F346C;
+  font-family: 'Roboto', sans-serif;
+   font-size: 18px;
+}
+#firsth1 {
+  color: #0F346C;
+  font-family: 'Roboto', sans-serif;
+}
+#btnone {
+  margin-top: 5px;
+}
+.button2 {
+  padding-bottom: 5px;
+}
+.buttons {
+  float: left;
+}
+
+#show2 {
+  text-align: center;
+  
+}
+#userimg {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+#show2 h1{
+  color: #0F346C;
+  font-family: 'Roboto', sans-serif;
+}
+#show2 h3{
+  color: #0F346C;
+  font-family: 'Roboto', sans-serif;
+}
+
+img2 {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+h1, h3 {
+  color: black;
+  font-family: 'Roboto', sans-serif;
+}
+.usersAll {
+  background-color: white;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+/* Main */
+.main {
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://image-service.blueapron.com/render/q/quality/75/src/https%3A%2F%2Fmedia.blueapron.com%2Fhome_page%2FSplash%2F20170620_TopImage_640_Mobile.jpg") no-repeat center center;
+  background-size: cover;
+  height: 600px;
+}
+
+.main .container {
+  position: relative;
+  top: 100px;
+}
+
+.main p{
+  color: #fff;
+  margin: 0;
+  font-size: 50px;
+  font-family: 'Roboto', sans-serif
+}
+.main2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+  url("http://assets.epicurious.com/photos/55dc88b3e5dddc7a28fd61fa/master/pass/56389998_fancy-grilled-cheese.jpg") no-repeat center center;
+  height: 300px;
+  background-size: cover;
+  padding-top: 0;
+}
+.container3 {
+  position: relative;
+  top: 100px;
+}
+#articlesheader {
+  color: white;
+  font-family: 'Roboto', sans-serif; 
+  text-align: center;
+  font-size: 70px;
+}
+.row2 {
+  text-align: center;
+}
+
+.thumbnail2 {
+  padding-top: 10px;
+  border-radius: 4px;
+
+}
+.container2 {
+  margin: 20px;
+}
+.ul {
+  list-style-type: none;
+  background-color: white;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.25);
+  padding: 10px;
+
+}
+.imguser {
+  object-fit: cover;
+  border-radius: 5px;
+}
+ul {
+  list-style-type: none;
+}
+.imgarticles {
+  margin: 5px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+#titlearticle {
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+  color: #0F346C;
+}
+.titlearticles {
+  color: #0F346C;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+}
+.main4 {
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), 
+  url('http://img1.southernliving.timeinc.net/sites/default/files/styles/4_3_horizontal_inbody_900x506/public/image/2016/08/main/bentonville-farmers-market_5020.jpg?itok=JuwDf5Mx') no-repeat center center;
+  background-size: cover;
+  height: 300px;
+}
+.container4 {
+  margin: 0 auto;
+  top: 100px;
+  position: relative;
+}
+.sellerbanner{
+  text-align: center;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 80px;
+}
+#sellerimg {
+  object-fit: cover;
+}
+#imgarticle {
+  text-align: center;
+}
+@media (max-width:480px) { 
+  .imgarticles {
+    
+    width: 750px;
+    height: 750px;
+   
+  }
+  #imgarticle {
+    width: 750px;
+    height: 750px;
+  }
+}
+@media (max-width:767px) { 
+.imgarticles {
+    
+    width: 550px;
+    height: 550px;
+    
+  }
+  #imgarticle {
+    width: 550px;
+    height: 550px;
+  }
+}
+@media (max-width:1224px) { 
+  .imgarticles {
+    
+    width: 280px;
+    height: 280px;
+    
+  }
+ #imgarticle {
+    width: 280px;
+    height: 280px;
+  }
+}

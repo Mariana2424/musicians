@@ -1,0 +1,50 @@
+<div class="formcontrol0">
+    <p>
+<%= form_for(@user, :html => {class: "form-horizontal", role: "form"}) do |a| %>
+</p>
+<p>
+  <%= a.label :username, class: "form-control2" %>
+</p>
+
+<p>
+  <center><%= a.text_field :username, class: "form-control", placeholder: "Enter username", autofocus: true %></center> 
+</p>
+<p>
+  <%= a.label :email, class: "form-control2" %>
+</p>
+<p>
+  <center><%= a.email_field :email, class: "form-control", placeholder: "Enter email"%></center> 
+</p>
+
+<p>
+  <%= a.label :password, class: "form-control2" %>
+</p>
+<p>
+  <center> <%= a.password_field :password, class: "form-control", placeholder: "Enter username" 
+  %></center>
+</p>
+<p>
+  <%= a.label :image, class: "form-control2" %>
+</p>
+<p>
+  <center><%= a.text_field :image, class: "form-control", placeholder: "Enter image" %></center>   
+</p>
+<div class="button2">
+  <p><%= a.submit(@user.new_record? ? "Sign up" : "Update", class: "two") %></p>
+  <% end %> 
+</div>
+</div>
+
+ 
+
+
+<div class="buttons">
+  <p id="two" style="margin-left: 15px">
+  <%= link_to "Back", articles_path, class: "two" %>
+  </p>
+</div>
+  
+  
+
+ 
+

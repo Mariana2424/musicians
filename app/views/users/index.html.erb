@@ -1,0 +1,33 @@
+<%= render 'welcome/header' %>
+<div class="main4">
+  <div class="container4">
+    <h1 class="sellerbanner">All sellers</h1>
+  </div>
+</div>
+
+<% @users.each do |user| %>
+<ul class="usersAll">
+  
+</ul>
+
+<div class="container2">
+  <div class="jumbotron2">
+    <div class="row2">
+    <div class="col-lg-4 col-sm-6">
+      <div class="thumbnail2">
+      <ul class="ul">
+        <% if user.image%>
+    <li><img class="imguser" width="150" height="150" src="<%= user.image %>"></li>
+  <% end %>
+  <li><%= link_to user.username, user_path(user) %></li>
+  <li><%= pluralize(user.articles.count, "article") if user.articles %>
+    
+  </li>
+      </ul>
+        
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+<% end %>

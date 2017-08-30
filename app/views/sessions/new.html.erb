@@ -1,0 +1,17 @@
+ <%= render 'welcome/header' %>
+  <center>
+<h1>Log in</h1>
+<%= form_for(:session, :html => {class: "form-horizontal", role: "form"}, url: login_path) do |l| %>
+
+    <%= l.label :email, class: "form-control2" %>
+  <%= l.email_field :email, class: "form-control", placeholder: "Enter Email" %>
+
+  <%= l.label :password, class: "form-control2" %>
+  <%= l.password_field :password, class: "form-control", placeholder: "Enter password" %>
+  <%= l.submit "Log In", class: "'btn btn-primary btn-lg", id: "btnone" %>
+
+  <% end %>
+  </center>
+  
+
+  
